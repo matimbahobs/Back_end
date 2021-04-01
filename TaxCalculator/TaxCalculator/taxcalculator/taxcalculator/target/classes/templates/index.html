@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Tax Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div>
+            <h1>Calculate your Tax</h1>
+        </div>
+        <form th:action="@{result}" th:object="${taxcalculator}" method="post">
+            <div>
+                <label>Salary</label>
+                <input type="Number" id="salary" class="form-control" name="salary" >
+            </div>
+            <div>
+                <label>Age</label>
+                <input type="text" id="age" class="form-control" name="age" >
+            </div>
+            <div>
+                <label>Year</label>
+                <input type="text" id="year" class="form-control" name="year" >
+            </div>
+            <div>
+                <label>Number of Medical Aid Members</label>
+                <input type="text" id="nMember" class="form-control" name="nMember" >
+            </div>
+            </br>
+            <div>
+                <input type="submit" value="submit" />
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
