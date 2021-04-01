@@ -8,7 +8,7 @@ public class TaxCalculator {
      int year;
      double nMember;
      double netSalary;
-     String taxType;
+     String taxType;// used to check the type of salary entered, Annually or Monthly
 
 
 
